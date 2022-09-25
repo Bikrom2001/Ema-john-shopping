@@ -24,28 +24,3 @@
 .cart-container {
     background: rgba(255, 153, 0, 0.3);
 }
-
-.cart-container h4 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 30px;
-    color: #1C2B35;
-}
-
-.order-info {
-    padding: 23px;
-}
-
-.order-info p {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
-    color: #2A414F;
-    margin-bottom: 25px;
-}
