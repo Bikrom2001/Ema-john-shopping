@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.product {
+    width: 300px;
+    height: 510px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product img {
+    width: 286px;
+    height: 286px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.product-info {
+    padding: 0px 14px;
+}
+
+.product-info p {
+    margin-bottom: 0px;
+}
+
+.product-name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #0E161A;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+}
+
+.product-price {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #0E161A;
+}
+
+.btn-card {
+    width: 100%;
+    background: #FFE0B3;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    box-sizing: border-box;
+    transition: 0.5 ease-in;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+.btn-card:hover{
+    background-color: tomato;
+    color: white;
+}
+
+.cartplus{
+    margin-left: 5px;
+}

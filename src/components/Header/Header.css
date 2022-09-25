@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.Header {
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 97px;
+}
+
+.Header a {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 36px;
+}
+.Header a:hover{
+    color: tomato;
+    transition: 0.5 ease-in-out;
+}
