@@ -1,0 +1,72 @@
+.review-items img {
+    width: 91px;
+    height: 91px;
+    border-radius: 6px;
+}
+
+.review-items {
+    display: flex;
+    align-items: center;
+    border: 1px solid #95A0A7;
+    width: 571px;
+    border-radius: 8px;
+    margin: 21px auto;
+    padding: 8px;
+
+}
+
+.review-details p {
+    margin: 0;
+}
+
+.name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #1C2B35;
+}
+
+.price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1C2B35;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.review-details-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 17px;
+
+}
+.price-color{
+    color: #FF9900;
+}
+.delete-icons{
+    font-size: 31px;
+    color: #EB5757;
+}
+.btn-delete{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(235, 87, 87, 0.3);
+    cursor: pointer;
+}
+.btn-delete:hover{
+    background: rgba(235, 87, 87, 0.4);
+}
+.delete-container{
+    display: flex;
+    align-items: center;
+}
+.no-items{
+    text-align: center;
+}

@@ -1,24 +1,26 @@
+import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 import React, { useEffect, useState } from 'react';
-import { addToDb, getStoreedCart } from '../../utilities/fakedb';
+import { Link, useLoaderData } from 'react-router-dom';
+import { addToDb, deleteShoppingCart, getStoreedCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
-    const [products, setProducts] = useState([]);
+    const products = useLoaderData();
     const [cart, setCart] = useState([]);
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, []);
 
+    const clearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
+    }
+   
     useEffect(() => {
         const storedCart = getStoreedCart();
         const savedCart = [];
         for (const id in storedCart) {
             const addedProduct = products.find(product => product.id === id);
-            if(addedProduct){
+            if (addedProduct) {
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
                 savedCart.push(addedProduct);
@@ -27,12 +29,25 @@ const Shop = () => {
         setCart(savedCart);
     }, [products]);
 
-    const handleAddToCart = (product) => {
+    const handleAddToCart = (selectedProduct) => {
+
+        const exists = cart.find(product => product.id === selectedProduct.id);
+        let newCart = [];
+        if (!exists) {
+            selectedProduct.quantity = 1;
+            newCart = [...cart, selectedProduct];
+        }
+        else {
+            const rest = cart.filter(product => product.id !== selectedProduct.id);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists];
+        }
+
         // do not do this:  cart.push(product);
-        const newCart = [...cart, product];
+
         setCart(newCart);
 
-        addToDb(product.id)
+        addToDb(selectedProduct.id)
 
     }
 
@@ -48,7 +63,8 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} clearCart={clearCart}>
+                </Cart>
             </div>
         </div>
     );
