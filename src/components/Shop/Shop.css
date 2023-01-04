@@ -15,6 +15,21 @@
     gap: 45px;
 }
 
+.pagination{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pagination button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.pagination .selected{
+    background-color: goldenrod;
+    font-weight: bold;
+    color: white;
+    border-color: gold;
+}
+
 @media screen and (max-width:1100px) {
     .products-container {
         grid-template-columns: repeat(2, 1fr);

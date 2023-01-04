@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.from-container {
+    width: 500px;
+    height: 600px;
+    margin: 30px auto;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+}
+
+.form-div {
+    padding: 42px;
+}
+
+.from-second-container {
+    width: 500px;
+    height: 600px;
+    background: #FFE0B3;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+.from-title {
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    text-align: center;
+    margin-bottom: -12px;
+}
+
+.form-control label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+    padding-bottom: 9px;
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    /* padding-left: 10px; */
+}
+
+.form-control {
+    padding-bottom: 20px;
+}
+
+.login {
+    width: 100%;
+    height: 55px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+}
+
+.login:hover {
+    background: rgba(255, 153, 0, 0.6);
+}
+
+.new-ema {
+    text-align: center;
+}
+
+.careate {
+    color: #FF9900;
+}
+
+.or {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 354px;
+    margin: -20px auto;
+
+}
+
+.hr-1st {
+    width: 40%;
+}
+
+.or-title {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #95A0A7;
+
+}
+
+.google-btn {
+    margin-top: 40px;
+    display: block;
+    height: 55px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #95A0A7;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #2A414F;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.google {
+    padding: 0px 42px;
+}

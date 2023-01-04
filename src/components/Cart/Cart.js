@@ -3,7 +3,7 @@ import './Cart.css';
 import { TrashIcon } from '@heroicons/react/24/solid';
 import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 
-const Cart = ({ cart, clearCart, }) => {
+const Cart = ({ cart, clearCart, children}) => {
 
     let total = 0;
     let shipping = 0;
@@ -32,9 +32,10 @@ const Cart = ({ cart, clearCart, }) => {
                     <span> Clear Cart</span>
                     <TrashIcon className="delet" />
                 </button>
-                <button className='review-btn'>Review Order
+                {/* <button className='review-btn'>Review Order
                 <ArrowSmallRightIcon className="delet" />
-                </button>
+                </button> */}
+                {children}
             </div>
         </div>
     );
